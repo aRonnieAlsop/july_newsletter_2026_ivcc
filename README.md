@@ -1,0 +1,1 @@
+# july_newsletter_2026_ivcc
