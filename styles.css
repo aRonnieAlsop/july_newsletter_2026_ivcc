@@ -290,6 +290,92 @@ footer p {
     max-width: 620px;
 }
 
+/* ---------------------------------
+   WELCOME NEW MEMBERS
+----------------------------------*/
+
+.new-members{
+    padding:48px 42px;
+    border-top:1px solid rgba(255,255,255,.25);
+    border-bottom:1px solid rgba(255,255,255,.25);
+}
+
+.section-heading{
+    margin-bottom:34px;
+}
+
+.member-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:34px;
+}
+
+.member-card{
+    display:flex;
+    flex-direction:column;
+    background:#0b0b0b;
+    border:1px solid rgba(255,255,255,.18);
+}
+
+.member-photo{
+    width:100%;
+    aspect-ratio:4/3;
+    object-fit:cover;
+    display:block;
+}
+
+.member-card h3{
+    margin:22px 22px 14px;
+}
+
+.member-card p{
+    margin:0 22px 24px;
+    flex:1;
+}
+
+.article-logo{
+    width:90px;
+    display:block;
+    margin:0 auto 22px;
+    opacity:.85;
+    transition:.25s;
+}
+
+.article-logo:hover{
+    opacity:1;
+    transform:scale(1.05);
+}
+
+/* ---------------------------------
+   MOBILE
+----------------------------------*/
+
+@media (max-width:700px){
+
+.new-members{
+    padding:34px 22px;
+}
+
+.member-grid{
+    grid-template-columns:1fr;
+    gap:26px;
+}
+
+.member-card h3{
+    margin:18px 18px 12px;
+}
+
+.member-card p{
+    margin:0 18px 20px;
+}
+
+.article-logo{
+    width:78px;
+    margin-bottom:18px;
+}
+
+}
+
 /* MOBILE */
 
 @media (max-width: 700px) {
