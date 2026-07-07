@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #050505;
+  color: #f7f7f2;
+  font-family: "Istok Web", Arial, sans-serif;
+}
+
+.newsletter {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  background: #070707;
+}
+
+section,
+header,
+footer {
+  padding: 34px 42px;
+  border-bottom: 1px solid rgba(255,255,255,.35);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.ivcc-logo {
+  width: 96px;
+  height: auto;
+}
+
+.eyebrow {
+  margin: 0 0 4px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-size: 13px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  line-height: .95;
+  margin: 0 0 18px;
+}
+
+h1 {
+  font-size: clamp(54px, 10vw, 92px);
+}
+
+h2 {
+  font-size: clamp(34px, 6vw, 54px);
+}
+
+h3 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.two-col,
+.three-col,
+.board-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.two-col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  border: 1px solid rgba(255,255,255,.45);
+  padding: 22px;
+  background: #0b0b0b;
+}
+
+.logo-img {
+  max-width: 150px;
+  max-height: 90px;
+  object-fit: contain;
+  margin-bottom: 18px;
+  background: white;
+  padding: 8px;
+}
+
+.wide-logo {
+  max-width: 230px;
+  background: white;
+  padding: 10px;
+  margin-bottom: 22px;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.feature-img,
+.full-img,
+.flyer-section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gold h2 {
+  font-size: clamp(48px, 9vw, 82px);
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline li {
+  border-bottom: 1px solid rgba(255,255,255,.45);
+  padding: 10px 0;
+}
+
+.timeline span {
+  display: block;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.button {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  background: #ffb51b;
+  color: #050505;
+  padding: 12px 18px;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .03em;
+}
+
+.button.outline {
+  background: transparent;
+  color: #f7f7f2;
+  border: 1px solid #f7f7f2;
+}
+
+.green {
+  color: #65ff2e;
+  text-shadow: 0 0 12px rgba(101,255,46,.5);
+  font-size: clamp(36px, 7vw, 62px);
+}
+
+.board-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.board-grid p {
+  border-top: 1px solid rgba(255,255,255,.45);
+  padding-top: 12px;
+}
+
+.flyer-section img {
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+}
+
+footer img {
+  width: 90px;
+  margin-bottom: 12px;
+}
+
+footer p {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+@media (max-width: 700px) {
+  section,
+  header,
+  footer {
+    padding: 28px 22px;
+  }
+
+  .hero {
+    display: block;
+    text-align: center;
+  }
+
+  .ivcc-logo {
+    margin-bottom: 18px;
+  }
+
+  .two-col,
+  .three-col,
+  .feature,
+  .board-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature {
+    gap: 20px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .button {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
+}
